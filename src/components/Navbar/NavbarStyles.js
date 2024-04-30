@@ -30,6 +30,15 @@ export const NavbarWrapper = styled(WrapperStyled)`
     }
 `;
 
+export const NavbarMenu = styled.div`
+    display: flex;
+    gap: 50px;
+
+    @media (max-width: 1024px) {
+        gap: 20px;
+    }
+`
+
 export const NavbarList = styled.ul`
     display: flex;
     justify-content: center;
@@ -45,3 +54,19 @@ export const NavbarList = styled.ul`
         font-weight: 300;
     }
 `;
+
+export const NavbarWhatsApp = styled.div`
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    align-items: center;
+    color: var(--yellow);
+
+    p {
+        font-weight: 500;
+        @media (max-width: 1024px) {
+            display: none;
+            font-size: 24px;
+        }
+    }
+`

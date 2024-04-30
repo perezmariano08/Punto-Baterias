@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
         --blue: #22224C;
         --green: #57D163;
         /* Gray Scale */
-        --white: #fafafa;
+        --white: #ffffff;
         --gray-100: #e9ebed;
         --gray-200: #CACDD2;
         --gray-300: #9FA4A9;
@@ -71,14 +71,20 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     h2 {
-        font-size: 39.8px;
-        line-height: 39.8px;
-        font-weight: 400;
-        text-transform: uppercase;
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 600;
+        @media (max-width: 1024px) {
+            font-size: 32px;
+            line-height: 32px;
+        }
+        @media (max-width: 768px) {
+            font-size: 27px;
+            line-height: 27px;
+        }
         @media (max-width: 575px) {
-            h2 {
-                
-            }
+            font-size: 22px;
+            line-height: 22px;
         }
     }
 
@@ -108,7 +114,7 @@ export const GlobalStyles = createGlobalStyle`
 
     p {
         font-size: 16px;
-        font-weight: 300;
+        font-weight: 400;
         line-height: normal;
         @media (max-width: 575px) {
             font-size: 14px;

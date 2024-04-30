@@ -44,7 +44,7 @@ export const HeroText = styled.div`
     }
 
     p span {
-        font-weight: 400;
+        font-weight: 500;
         color: var(--yellow);
     }
     

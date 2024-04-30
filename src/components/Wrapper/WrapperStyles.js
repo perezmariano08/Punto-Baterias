@@ -7,4 +7,7 @@ export const WrapperStyled = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
 `
